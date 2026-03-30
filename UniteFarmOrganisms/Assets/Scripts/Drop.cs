@@ -42,9 +42,14 @@ public class Drop : MonoBehaviour
             {
                 if(drop.GetComponent<Rigidbody2D>().velocity.magnitude > GetComponent<Rigidbody2D>().velocity.magnitude)
                 {
-                    Drop newDrop = Instantiate(nextDrop, transform.position, transform.rotation, spawnParent.transform);
+                    if (nextDrop != null)
+                    {
+                        Drop newDrop = Instantiate(nextDrop, transform.position, transform.rotation, spawnParent.transform);
+                        newDrop.GetComponent<Rigidbody2D>().gravityScale = 1;
+                        newDrop.GetComponent<Collider2D>().enabled = true;
 
-                    newDrop.SetDropType(++type);
+                        newDrop.SetDropType(++type);
+                    }
 
                     Destroy(drop.gameObject);
                     Destroy(this.gameObject);
