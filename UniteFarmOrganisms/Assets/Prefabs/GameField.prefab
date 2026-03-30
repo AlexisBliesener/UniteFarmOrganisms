@@ -57,8 +57,8 @@ Transform:
   m_GameObject: {fileID: 982275332743361864}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.16, y: 5.77, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 13}
+  m_LocalPosition: {x: -14.36, y: 3.43, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 13}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4300225523418558256}
@@ -104,7 +104,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84efc6af9c6a7d041b89568f29f5bf70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -260,9 +260,11 @@ MonoBehaviour:
   - {fileID: 2083529508149177352, guid: 03986cd9332d4c7469d211de66d81bea, type: 3}
   - {fileID: 2083529508149177352, guid: e93a4885f1f8f7842a3eeb1220aea2ac, type: 3}
   - {fileID: 2083529508149177352, guid: 85011c57541bf374b9175b9c00c200a7, type: 3}
-  UFOActive: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  UFOInactive: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  UFOActive: {fileID: 21300000, guid: ff122613cc769504fa8e25c91a41736c, type: 3}
+  UFOInactive: {fileID: 21300000, guid: 84efc6af9c6a7d041b89568f29f5bf70, type: 3}
   UFO: {fileID: 2262994898132013775}
+  pauseMenu: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!1 &7891869679408975520
 GameObject:
   m_ObjectHideFlags: 0
